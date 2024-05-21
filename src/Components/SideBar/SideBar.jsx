@@ -2,12 +2,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function SideBar() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(2);
   const navigate = useNavigate();
   const handleClick = (index, item) => {
     setSelectedItem(index);
     if (item.text === "Classes") {
-      navigate("parent");
+      navigate("");
     }
     if (item.text === "Jeux") {
       navigate("jeux");
