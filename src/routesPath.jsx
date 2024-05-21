@@ -6,7 +6,7 @@ function RoutesPath() {
   return (
     <div>
       <Routes>
-        <Route path="/parent" element={<Parent />} />
+        <Route path="" element={<Parent />} />
         <Route path="/jeux" element={<Jeux />} />
       </Routes>
     </div>
